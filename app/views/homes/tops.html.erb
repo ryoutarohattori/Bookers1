@@ -1,11 +1,17 @@
-<h1>ようこそ　Bookersへ！</h1>
-
-<main>
-  <p>Bookersでは、さまざまな書籍に関するあなたの意見や</p>
-
-  <p>印象を共有し交換することができます</p>
+<div class="title">
+  <h1>ようこそ　Bookersへ！</h1>
   
-  <%= link_to "start",new_book_path(@book.id)%>
+  <div class="title-comment">
+    <p class="comment"><span>Bookers</span>では、さまざまな書籍に関するあなたの意見や</p>
+    
+    <p class="comment">印象を共有し交換することができます</p>
+    
+    <p class="comment"><%= link_to "start",'/books' %></p>
+  </div>
+</div>
 
-</main>
+
+
+
+
 
