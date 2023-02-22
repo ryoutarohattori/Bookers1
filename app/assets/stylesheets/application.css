@@ -41,34 +41,36 @@ span {
 
 .main {
   margin: 10px;
-  height: 300px;
-  display: flex
 }
 
 .box1 {
   width: 150px;
-  text-align: center; 
+  font-size: 12px;
 }
-
-.box-title {
-  font-weight: bold
-}
-
 
 .box2 {
-  width: 450px;
-  text-align: center;
+  width: 300px;
+  font-size: 12px;
 }
 
-.box-body {
-  font-weight: bold;
-}
-
-.box3 {
-  width: 150px;
-}
-
-.header2 {
+.content {
   margin-top: 10px;
-  
+}
+
+.content-title {
+  font-size: 20px;
+}
+
+ul {
+  margin-bottom: 30px;
+}
+
+h4 {
+  margin-top: 10px;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+ul li {
+  list-style: none;
 }
