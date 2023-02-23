@@ -2,25 +2,25 @@
  
  <div class="header">
   
-   <h2>Books</h2>
+  <h2>Books</h2>
   
  </div>
 
  <div class="main">
-   <table>
-    <tr>
+  <% @books.each do |book| %> 
+   <table cellspacing="15">
      <th class="box1">Title</th>
      <th class="box2">Body</th>
      <th></th>
-    </tr>
     <tr>
-     <td></td>
-     <td></td>
-     <td>
-      <%= link_to 'Show',book_path(book.id) %>
-     </td>
+     <td><%= book.title %></td>
+     <td><%= book.body %></td>
+     <td><%= link_to 'Show','books/:id' %></td>
+     <td><%= link_to 'Edit','books/:id/edit' %></td>
+     <td><%= link_to 'Destroy' %></td>
     </tr>
    </table>
+  <% end %>
  </div>
 
  <div class="content">
