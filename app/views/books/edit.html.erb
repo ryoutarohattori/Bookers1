@@ -2,8 +2,16 @@
      <h1>Editing Book</h1>
 </div>
 <div class="content2">
-  <%= form_with model:@book, url: update_book_path(@book.id), method: :patch do |f| %>
- <ul>
+ <% if@book.errors.any? %>
+  <%= @book.errors.count %>error prohibited this book from being saved:
+  <ul>
+      <% @book.errors.full_messages.each do |message| %>
+       <li><%= message %></li>
+      <% end %>
+  </ul>
+ <% end %>
+ <%= form_with model:@book, url: update_book_path(@book.id), method: :patch do |f| %>
+  <ul>
      <h4>Title</h4>
      
      <li><%= f.text_field :title %></li>
